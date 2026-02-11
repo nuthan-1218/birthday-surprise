@@ -1,6 +1,6 @@
 /* PAGE 1 TYPING */
 
-let openingText = "Today is very special ❤️";
+let openingText = "Today is 12/2/2026 ❤️\nIt’s very special for me";
 let i = 0;
 let typingEl = document.getElementById("typing");
 
@@ -84,3 +84,4 @@ function startFinalMessage() {
 
   typeFinal();
 }
+
