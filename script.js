@@ -65,7 +65,7 @@ updatePhoto();
 let finalText =
   "You are not special only today.\n" +
   "You are special every single day.\n\n" +
-  "Happy Birthday, my world ❤️";
+  "Happy Birthday, Frd world ❤️";
 
 let j = 0;
 
@@ -84,3 +84,4 @@ function startFinalMessage() {
 
   typeFinal();
 }
+
