@@ -84,4 +84,3 @@ function startFinalMessage() {
 
   typeFinal();
 }
-
