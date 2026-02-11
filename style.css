@@ -1,11 +1,11 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* ================= BODY ================= */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
@@ -17,11 +17,11 @@ body {
   align-items: center;
 }
 
-/* PAGE */
+/* ================= PAGE ================= */
 .page {
   display: none;
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   padding: 40px 20px;
 }
 
@@ -30,41 +30,51 @@ body {
   animation: fadeIn 0.8s ease;
 }
 
-/* ANIMATION */
+/* ================= ANIMATION ================= */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* HEADINGS (BIGGER NOW) */
+/* ================= HEADINGS ================= */
 h1 {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 1.4;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
-/* Birthday page extra big */
+/* Birthday Special */
 .birthday {
-  font-size: 55px;
+  font-size: 60px;
   animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 15px white; }
-  to { text-shadow: 0 0 35px gold; }
+  from {
+    text-shadow: 0 0 15px white;
+  }
+  to {
+    text-shadow: 0 0 35px gold;
+  }
 }
 
-/* Paragraph */
+/* ================= PARAGRAPH ================= */
 p {
   font-size: 22px;
   margin-top: 15px;
   opacity: 0.95;
 }
 
-/* Buttons */
+/* ================= BUTTON ================= */
 button {
-  padding: 14px 35px;
+  padding: 15px 35px;
   margin: 15px 10px;
   font-size: 20px;
   border: none;
@@ -80,25 +90,37 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* Image */
+/* ================= IMAGE ================= */
 img {
   width: 100%;
-  max-width: 350px;
+  max-width: 380px;
   border-radius: 25px;
   margin: 30px 0;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   transition: 0.5s ease;
 }
 
-/* Photo count */
+/* ================= PHOTO COUNT ================= */
 #photoCount {
   font-size: 18px;
   margin-top: 10px;
   opacity: 0.9;
 }
 
-/* MOBILE FRIENDLY */
+/* ================= FINAL MESSAGE ================= */
+#finalMessage {
+  white-space: pre-line;   /* VERY IMPORTANT for \n */
+  font-size: 34px;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
 
   h1 {
     font-size: 30px;
@@ -120,11 +142,8 @@ img {
   img {
     max-width: 280px;
   }
-}
-#finalMessage {
-  white-space: pre-line;
-  font-size: 32px;
-  line-height: 1.8;
-}
 
-
+  #finalMessage {
+    font-size: 26px;
+  }
+}
