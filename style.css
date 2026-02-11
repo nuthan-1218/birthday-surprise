@@ -121,3 +121,10 @@ img {
     max-width: 280px;
   }
 }
+#finalMessage {
+  white-space: pre-line;
+  font-size: 32px;
+  line-height: 1.8;
+  padding: 20px;
+}
+
