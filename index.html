@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For You ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,15 +12,13 @@
 <section class="page active" id="page1">
   <h1 id="typing"></h1>
   <p>Do you know what day it is?</p>
-  <div class="btns">
-    <button onclick="goToPage(2)">Yes 💖</button>
-    <button onclick="noOption()">No 😔</button>
-  </div>
+  <button onclick="goToPage(2)">Yes 💖</button>
+  <button onclick="noOption()">No 😔</button>
 </section>
 
 <!-- PAGE 2 -->
 <section class="page" id="page2">
-  <h1 class="birthday">🎉 HAPPY BIRTHDAY Frd World❤️ 🎉</h1>
+  <h1 class="birthday">🎉 HAPPY BIRTHDAY 🎉</h1>
   <p>Today is all about you ✨</p>
   <button onclick="goToPage(3)">Continue 💌</button>
 </section>
@@ -27,8 +26,8 @@
 <!-- PAGE 3 -->
 <section class="page" id="page3">
   <h1>Beautiful Memories 💕</h1>
-  <img id="photo" src="images/img1.jpg" alt="Memory">
-  <div class="btns">
+  <img id="photo" src="images/img1.jpeg" alt="Memory">
+  <div>
     <button onclick="prevPhoto()">⬅ Previous</button>
     <button onclick="nextPhoto()">Next ➡</button>
   </div>
@@ -42,5 +41,6 @@
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
